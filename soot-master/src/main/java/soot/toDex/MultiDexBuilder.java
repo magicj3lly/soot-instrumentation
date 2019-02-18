@@ -92,9 +92,11 @@ public class MultiDexBuilder {
     // pack those explicitly in the first dex file.
     // (https://developer.android.com/studio/build/multidex.html,
     // http://www.fasteque.com/deep-dive-into-android-multidex/)
-    if (!opcodes.isArt()) {
+    // RK::COMMENTED CODE BELOW
+/*    if (!opcodes.isArt()) {
       throw new RuntimeException("Dex file overflow. Splitting not support for pre Lollipop Android (Api 22).");
     }
+ */
 
     return true;
   }
